@@ -32,7 +32,6 @@
     "lint:fix": "pnpm run lint --fix",
     "build": "tsdown",
     "dev": "tsdown --watch",
-    "test": "vitest",
     "typecheck": "tsgo --noEmit",
     "format": "prettier --cache --write .",
     "release": "bumpp",
@@ -42,7 +41,7 @@
     "@jsr/std__semver": "1.0.8"
   },
   "devDependencies": {
-    "@std/semver": "jsr:^1.0.8",
+    "@std/semver": "npm:@jsr/std__semver@^1.0.8",
     "@sxzz/eslint-config": "^7.8.3",
     "@sxzz/prettier-config": "^2.3.1",
     "@types/node": "^25.3.5",
@@ -52,8 +51,7 @@
     "prettier": "^3.8.1",
     "tsdown": "^0.21.1",
     "tsdown-preset-sxzz": "^0.4.1",
-    "typescript": "^5.9.3",
-    "vitest": "^4.0.18"
+    "typescript": "^5.9.3"
   },
   "prettier": "@sxzz/prettier-config"
 }
