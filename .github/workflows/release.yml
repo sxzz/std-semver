@@ -34,7 +34,7 @@ jobs:
         run: deno install
 
       - name: Generate GitHub Changelog
-        run: pnpx changelogithub
+        run: npx changelogithub
         continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
