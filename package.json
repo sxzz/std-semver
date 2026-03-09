@@ -2,7 +2,7 @@
   "name": "std-semver",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@10.31.0",
+  "packageManager": "npm@11.11.0",
   "description": "npm port of @std/semver",
   "license": "MIT",
   "homepage": "https://github.com/sxzz/std-semver#readme",
@@ -29,19 +29,19 @@
   },
   "scripts": {
     "lint": "eslint --cache .",
-    "lint:fix": "pnpm run lint --fix",
+    "lint:fix": "npm run lint --fix",
     "build": "tsdown",
     "dev": "tsdown --watch",
     "typecheck": "tsgo --noEmit",
     "format": "prettier --cache --write .",
     "release": "bumpp",
-    "prepublishOnly": "pnpm run build"
+    "prepublishOnly": "npm run build"
   },
   "inlinedDependencies": {
     "@jsr/std__semver": "1.0.8"
   },
   "devDependencies": {
-    "@std/semver": "npm:@jsr/std__semver@^1.0.8",
+    "@std/semver": "jsr:@std/semver@^1.0.8",
     "@sxzz/eslint-config": "^7.8.3",
     "@sxzz/prettier-config": "^2.3.1",
     "@types/node": "^25.3.5",
